@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary: #457B9D;
+  --secondary: #A8DADC;
+  --soft-bg: #EAF6F6;
+  --dark: #1D3557;
+  --light: #ffffff;
+}
+
+/* ---- Global ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--soft-bg);
+  color: var(--dark);
+}
+
+/* ---- Header ---- */
+header {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 1rem 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  margin-left: 15px;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: white;
+  transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* ---- Hero ---- */
+.hero {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 2.4rem;
+  color: var(--dark);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin: 10px 0 20px;
+  color: var(--primary);
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2c5875;
+  transform: scale(1.05);
+}
+
+/* ---- About ---- */
+.about {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* ---- Resume ---- */
+.resume-container {
+  width: 85%;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.resume-content h2 {
+  margin-bottom: 10px;
+  border-left: 6px solid var(--primary);
+  padding-left: 10px;
+}
+
+.card {
+  background: var(--soft-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* ---- Skills ---- */
+.skills span {
+  background: var(--primary);
+  color: white;
+  padding: 8px 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* ---- Biodata ---- */
+.biodata-section {
+  width: 80%;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  color: var(--primary);
+  width: 35%;
+}
+
+/* ---- Footer ---- */
+footer {
+  background: linear-gradient(90deg, var(--secondary), var(--primary));
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
